@@ -2,7 +2,7 @@
 This repository contains the source code to replicate the pipeline described in "Optimizing Loop Diuretic Treatment in Hospitalized Patients: A Case Study in Practical Application of Offline Reinforcement Learning to Healthcare".
 
 ## Usage
-- Refer to `requirements.txt` for the necessary pip packages.
+- Refer to `requirements.txt` for the necessary conda packages.
 - **data**: This directory contains sample input data.
 - **pipeline**: This directory contains the offline RL pipeline for tabular data.
   - `1_run_kmeans.py`: Takes the embedded EHR features (`data/embedded.p`) and uses ensemble k-means clustering to discretize the data.
