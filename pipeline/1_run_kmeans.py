@@ -62,15 +62,14 @@ def combine_results_from_ensemble(split_id, k = 100):
 ###################################################################################
 #######################          Main Functions         ###########################
 ###################################################################################
-def run_ensemble_kmeans(split_id = None, k = 100, E = 150):
+def run_ensemble_kmeans(tr_embed_df, save_dir, k = 100, E = 150):
     '''
     Run ensemble kmeans. This samples a single window from every patient and learns a clustering solution.
     After E bootstraps, it combines the ensemble results into a single clustering solution
-        split_id : id of the data partition used to learn the clustering solution from
+        tr_embed_df : embedded training data
         k : number of states
         E : number of bootstraps
     '''
-    tr_embed_df = pd.read_pickle('./data/embedded.p'.format(split_id, split_id))
     for i in tqdm(range(E)): 
         # randomly sample a single window from every patient
         train_samp = tr_embed_df.groupby('hosp_id', as_index=False).apply(lambda x: x.sample(1, random_state = i))
