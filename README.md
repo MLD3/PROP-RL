@@ -1,4 +1,4 @@
-# PROP-RL: **P**ipieline for learning **Ro**bust **P**olicies in **RL**
+# PROP-RL: <ins>P</ins>ipieline for learning <ins>Ro</ins>bust <ins>P</ins>olicies in <ins>RL</ins>
 This repository contains the source code to replicate the pipeline described in "Optimizing Loop Diuretic Treatment in Hospitalized Patients: A Case Study in Practical Application of Offline Reinforcement Learning to Healthcare".
 
 ## Usage
