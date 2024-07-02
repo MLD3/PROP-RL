@@ -1,4 +1,4 @@
-# OfflineRL_Pipeline
+# PROP-RL: **P**ipieline for learning **Ro**bust **P**olicies in **RL**
 This repository contains the source code to replicate the pipeline described in "Optimizing Loop Diuretic Treatment in Hospitalized Patients: A Case Study in Practical Application of Offline Reinforcement Learning to Healthcare".
 
 ## Usage
